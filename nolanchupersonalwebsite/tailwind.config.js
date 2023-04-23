@@ -9,13 +9,11 @@ module.exports = {
     extend: {
       colors: {
         ncc: {
-          lightblue: "#A2E1FF",
-          blue: "#5EB7FF",
-          bluePurple: "#7D91EA",
-          purple: "#A571CD",
-          pinkPurple: "#BF4CA0",
-          pink: "#C62368",
-          black: "#001220",
+          beige: "#DFC79E",
+          black: "#0F0A0A",
+          grey: "#6D6875",
+          white: "#F7F7FF",
+          brown: "#1E140B",
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
