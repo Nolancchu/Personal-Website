@@ -11,7 +11,6 @@ export default function Home() {
     <>
       <Navigation/>
       <div className='flex flex-col items-center w-full h-screen bg-ncc-green'>TEST TEXT</div>
-
       <Footer/>
     </>
   )
