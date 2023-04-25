@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         ncc: {
-          beige: "#DFC79E",
+          beige: "#eeebec",
           black: "#0F0A0A",
           grey: "#6D6875",
           white: "#F7F7FF",

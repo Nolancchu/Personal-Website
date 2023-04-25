@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navigation/>
-      <div className='flex flex-col items-center w-full h-screen bg-ncc-green'>TEST TEXT</div>
+      <div className='flex flex-col items-center w-full h-screen bg-ncc-beige'>l</div>
       <Footer/>
     </>
   )
