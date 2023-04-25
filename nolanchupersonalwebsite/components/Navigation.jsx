@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Navigation = () => {
     return (
-    <>
+    <div className="bg-ncc-white">
           <Navbar bg={'ncc-white'} expand="lg">
             <Navbar.Brand href="#home" className='ml-20 fs-4 flex flew-row'>
                 <img
@@ -27,7 +27,7 @@ const Navigation = () => {
             </Navbar>
           </Navbar>
         <div className={`w-full h-1 bg-ncc-brown`} />
-    </>
+    </div>
     )
 }
 
