@@ -6,13 +6,18 @@ import {FaEnvelope} from "react-icons/fa"
 import {FaGithubSquare} from "react-icons/fa"
 import {FaLinkedin} from "react-icons/fa"
 import { motion } from "framer-motion";
+import { Cormorant_Garamond } from "next/font/google";
 
+const garamond = Cormorant_Garamond({
+  subsets: ['latin'], 
+  weight: ['400'],
+})
 
 const Navigation = () => {
     return (
     <div className="flex justify-between bg-ncc-beige">
         <Navbar>
-          <NavDropdown title="Menu" id="basic-nav-dropdown" style={{fontSize: 24}} className="justify-start ml-16">
+          <NavDropdown title="[ Menu ]" id="basic-nav-dropdown" style={{fontSize: 24}} className="justify-start ml-16">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" className="test-2xl">
                   Another action
