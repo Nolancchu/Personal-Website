@@ -30,7 +30,7 @@ const HomePageGraphic = () => {
                 <div className="ml-[.4rem] text-9xl -translate-y-[2rem]">
                     <span className={Bebas.className}>PRETENTIOUS TEXT</span>
                 </div>
-                <div className="ml-3 text-xl -translate-y-[3rem]">
+                <div className="ml-3 text-2xl -translate-y-[3rem]">
                     <span className={garamond.className}>My name is Nolan Chu, a first-year computer science <br></br> student at the University of California, Riverside.</span>
                 </div>            
             </div>

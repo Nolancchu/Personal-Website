@@ -14,7 +14,7 @@ module.exports = {
           grey: "#6D6875",
           white: "#F7F7FF",
           brown: "#1E140B",
-          green: "#478778",
+          green: "#3B6662",
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

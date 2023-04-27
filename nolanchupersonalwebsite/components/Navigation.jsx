@@ -15,23 +15,24 @@ const garamond = Cormorant_Garamond({
 
 const Navigation = () => {
     return (
+      <div className="w-full h-auto flex flex-col ">
+      <div className="w-full h-2 bg-ncc-beige"/>
     <div className="flex justify-between bg-ncc-beige">
         <Navbar>
-          <NavDropdown title="[ Menu ]" id="basic-nav-dropdown" style={{fontSize: 24}} className="justify-start ml-16">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="test-2xl">
-                  Another action
+          <NavDropdown title="[ Menu ]" id="basic-nav-dropdown" style={{fontSize: 32}} className="justify-start ml-16">
+                <NavDropdown.Item href="/">Home</NavDropdown.Item>
+                <NavDropdown.Item href="/portfolio" className="test-2xl ">
+                  Portfolio
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+                <NavDropdown.Item href="/about">
+                  About
                 </NavDropdown.Item>
           </NavDropdown>
         </Navbar>
 
         <Navbar>
-          <Navbar.Brand href="#home" className="justify-center ml-20">
+          <Navbar.Brand href="#home" className="justify-center ml-7">
                   <img
                     src="/React-icon.png"
                     width="60"
@@ -46,7 +47,7 @@ const Navigation = () => {
             <motion.a
                   target="_blank"
                   href="https://github.com/Nolancchu"
-                  className="text-ncc-brown hover:opacity-70 ml-1 mr-6"
+                  className="text-ncc-brown hover:text-ncc-green ml-1 mr-6"
               >
                   <FaGithubSquare size={30}/>
               </motion.a>
@@ -54,7 +55,7 @@ const Navigation = () => {
               <motion.a
                 target="_blank"
                 href="https://www.linkedin.com/in/nolan-chu/"
-                className="text-ncc-brown hover:opacity-70 mr-6"
+                className="text-ncc-brown hover:text-ncc-green mr-6"
               >
                 <FaLinkedin size={30} />
               </motion.a>
@@ -62,12 +63,14 @@ const Navigation = () => {
               <motion.a
                 target="_blank"
                 href="mailto: nolancswe@gmail.com"
-                className="text-ncc-brown hover:opacity-70 mr-16"
+                className="text-ncc-brown hover:text-ncc-green mr-16"
               >
                 <FaEnvelope size={30} />
             </motion.a>
           </Nav>
         </Navbar>
+    </div>
+    
     </div>
     )
 }
