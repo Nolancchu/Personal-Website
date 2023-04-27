@@ -21,7 +21,7 @@ const HomePageNav = () => {
             <div className="w-[.15rem] h-32 ml-10 mr-10 bg-ncc-black"/>
             <Link href="/about" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ About ]</Link>
         </div>
-
+        <div className="w-full h-12 bg-ncc-beige"/>
     </div>
   );
 };

@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer className="w-full relative">
-        <div className="w-full h-12 bg-ncc-beige"/>
         <div className={`w-full h-[.1rem] bg-ncc-brown`} />
         <div className="w-full flex flex-col items-center  bg-ncc-beige">
             <div className="h-14 mt-3 flex flex-row justify-center items-center">
