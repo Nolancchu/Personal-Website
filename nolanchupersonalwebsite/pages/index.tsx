@@ -6,10 +6,9 @@ import HomePageNav from "@/components/HomePageNav";
 
 export default function Home() {
   return (
-    <div className='w-full h-screen bg-ncc-beige'>
+    <div className='w-full h-full bg-ncc-beige'>
       <Navigation/>
       <HomePageGraphic/>
-      <HomePageNav/>
       <Footer/>
     </div>
   )

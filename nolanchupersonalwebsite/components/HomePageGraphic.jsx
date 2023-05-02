@@ -21,11 +21,8 @@ const Bebas = Bebas_Neue ({
 const HomePageGraphic = () => {
   return (
     <div className="styles.container">
-        <Head>
-
-        </Head>
-        <div className="flex flex-row overflow-clip w-full bg-ncc-beige">
-            <div className="col mt-10 ml-16 w-1/2 z-10">
+        <div className="flex flex-row overflow-clip w-full mt-10">
+            <div className="col mt-10 ml-16 w-1/2 z-10 " >
                 <div className="text-9xl translate-y-[2.6rem]">
                     <span className={garamond.className}>PRE</span>
                 </div>
