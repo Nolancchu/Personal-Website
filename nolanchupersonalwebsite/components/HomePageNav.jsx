@@ -15,9 +15,9 @@ const HomePageNav = () => {
         <div className={`w-full h-[.1rem] bg-ncc-brown mb-12`} />
     
         <div className="flex flex-row w-full items-center justify-center bg-ncc-beige">
-            <Link href="https://legacy.reactjs.org/docs/getting-started.html" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ Portfolio ]</Link>
+            <Link href="/portfolio" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ Portfolio ]</Link>
             <div className="w-[.15rem] h-32 ml-10 mr-10 bg-ncc-black"/>
-            <Link href="https://legacy.reactjs.org/docs/getting-started.html" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ Experience ]</Link>
+            <Link href="/experience" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ Experience ]</Link>
             <div className="w-[.15rem] h-32 ml-10 mr-10 bg-ncc-black"/>
             <Link href="/about" className="text-ncc-brown text-6xl hover:text-ncc-white" style={{ textDecoration: 'none' }}>[ About ]</Link>
         </div>

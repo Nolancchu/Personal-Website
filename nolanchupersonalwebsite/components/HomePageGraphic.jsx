@@ -2,7 +2,12 @@ import React from "react";
 import Head from "next/head";
 import { Cormorant_Garamond } from 'next/font/google';
 import { Bebas_Neue } from "next/font/google";
+import { Unbounded } from "next/font/google";
 
+const unbounded = Unbounded({
+    subsets: ['latin'],
+    weight: ['300']
+})
 const garamond = Cormorant_Garamond({
     subsets: ['latin'], 
     weight: ['300'],

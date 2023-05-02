@@ -1,14 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ProjectSection from "@/components/ProjectSection"
+
 
 export default function Portfolio() {
   return (
-    <div className='w-full h-screen bg-ncc-beige'>
+    <div className='w-full h-full bg-ncc-beige'>
         <Navigation/>
-        <div className="w-full h-36 bg-ncc-beige"/>
-        <div className="flex w-8/12 h-96 justify-center items-center rounded-xl bg-ncc-green"></div> 
-        
+        <div className = "flex flex-col justify-center items-center">
+          <div className="w-full h-8 bg-ncc-beige"/>
+          <div className="text-5xl">Besides this website, here's what I've been working on...</div>
+          <div className="w-full h-12 bg-ncc-beige"/>
+        </div>
+        <ProjectSection/>
         <Footer/>
     </div>
   )
