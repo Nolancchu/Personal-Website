@@ -29,9 +29,9 @@ const ProjectCards = [
     return (
         <div>
         <div className="flex w-full items-center justify-center">
-          <Row className="w-full items-center justify-center">
+          <Row className="w-11/12 items-center justify-center">
             {ProjectCards.map((card, index) => (
-              <Col className="p-6" xs={12} lg={6} key={index}>
+              <Col className="mb-20" xs={12} lg={6} key={index}>
                 <ProjectCard
                   key={index}
                   name={card.name}
