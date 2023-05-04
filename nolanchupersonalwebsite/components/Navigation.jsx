@@ -60,7 +60,7 @@ const Navigation = () => {
                   }}
                 >
                   <motion.div
-                    className="container absolute w-screen h-screen z-20 bg-ncc-beige"
+                    className="container absolute h-1000 w-auto z-20 bg-ncc-beige border-r-4 border-ncc-brown"
                     initial="closed"
                     animate="open"
                     exit="closed"
@@ -74,7 +74,7 @@ const Navigation = () => {
                           color: "#3B6662",
                         }}
                         variants={itemVariants}
-                        className="text-ncc-green no-underline flex flex-col text-9xl items-center justify-center"
+                        className="text-ncc-green no-underline flex flex-col text-5xl items-start mt-8 mb-8"
                       >
                         <span className={int.className}>{name}</span>
                       </motion.a>
@@ -86,19 +86,15 @@ const Navigation = () => {
 
       <div className="w-full h-2 bg-ncc-beige"/>
       <div className="flex flex-row justify-between mt-4 z-40">
+          <div className="btn-container mt-1 ml-16">
+              <button onClick={cycleOpen}>{open ? <FaEquals size={34}/> : <FaEquals size={34}/>}</button>
+          </div>
+
           <Navbar>
-            <Navbar.Brand href="/" className="justify-center ml-12 mb-4 ">
+            <Navbar.Brand href="/" className="mb-4 ml-32">
                     <FaReact size={35} className="md:scale-150 "/>
             </Navbar.Brand>
           </Navbar>
-
-          <main>
-            
-              <div className="btn-container p-3 mt-1 absolute">
-                  <button onClick={cycleOpen}>{open ? <FaEquals size={34}/> : <FaEquals size={34}/>}</button>
-              </div>
-            
-          </main>
 
           <Navbar>
             <Nav>
