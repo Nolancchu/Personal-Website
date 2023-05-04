@@ -7,6 +7,12 @@ import {FaGithubSquare} from "react-icons/fa"
 import {FaLinkedin} from "react-icons/fa"
 import { motion, AnimatePresence, useCycle, rotate} from "framer-motion";
 import { FaReact } from "react-icons/fa";
+import { Inter } from "next/font/google";
+
+const int = Inter ({
+    subsets: ['latin'],
+    weight: ['600']
+})
 
 const links = [
   { name: "Home", to: "/", id: 1 },
@@ -40,17 +46,8 @@ const Navigation = () => {
     const [open, cycleOpen] = useCycle(false, true);
 
     return (
-    <div className="w-full h-auto flex flex-col ">
-      <div className="w-full h-2 bg-ncc-beige"/>
-      <div className="flex flex-row justify-between mt-4">
-          <Navbar>
-            <Navbar.Brand href="/" className="justify-center ml-12 mb-4 ">
-                    <FaReact size={35} className="md:scale-150 "/>
-            </Navbar.Brand>
-          </Navbar>
-
-          <main>
-            <AnimatePresence>
+    <div className="w-full h-full flex flex-col ">
+      <AnimatePresence>
               {open && (
                 <motion.aside
                   initial={{ width: 0 }}
@@ -63,7 +60,7 @@ const Navigation = () => {
                   }}
                 >
                   <motion.div
-                    className="container "
+                    className="container absolute w-screen h-screen z-20 bg-ncc-beige"
                     initial="closed"
                     animate="open"
                     exit="closed"
@@ -74,23 +71,30 @@ const Navigation = () => {
                         key={id}
                         href={to}
                         whileHover={{
-                          scale: 1.1,
-                          textDecorationLine: "underline",
-                          textDecorationColor: '#0F0A0A',
                           color: "#3B6662",
                         }}
                         variants={itemVariants}
-                        className="text-ncc-black no-underline ml-2 mr-2"
+                        className="text-ncc-green no-underline flex flex-col text-9xl items-center justify-center"
                       >
-                        {name}
+                        <span className={int.className}>{name}</span>
                       </motion.a>
                     ))}
                   </motion.div>
                 </motion.aside>
               )}
-            </AnimatePresence>
+      </AnimatePresence>
+
+      <div className="w-full h-2 bg-ncc-beige"/>
+      <div className="flex flex-row justify-between mt-4 z-40">
+          <Navbar>
+            <Navbar.Brand href="/" className="justify-center ml-12 mb-4 ">
+                    <FaReact size={35} className="md:scale-150 "/>
+            </Navbar.Brand>
+          </Navbar>
+
+          <main>
             
-              <div className="btn-container text-xl p-3 ml-20 mt-1">
+              <div className="btn-container p-3 mt-1 absolute">
                   <button onClick={cycleOpen}>{open ? <FaEquals size={34}/> : <FaEquals size={34}/>}</button>
               </div>
             

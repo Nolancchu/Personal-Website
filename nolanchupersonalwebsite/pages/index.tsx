@@ -6,7 +6,7 @@ import HomePageNav from "@/components/HomePageNav";
 
 export default function Home() {
   return (
-    <div className='w-full h-full bg-ncc-beige'>
+    <div className='w-full h-full bg-ncc-beige overscroll-none'>
       <Navigation/>
       <HomePageGraphic/>
       <Footer/>

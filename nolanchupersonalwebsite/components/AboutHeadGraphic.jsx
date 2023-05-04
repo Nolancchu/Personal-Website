@@ -1,11 +1,4 @@
 import React from "react";
-import { Bebas_Neue } from "next/font/google";
-import { FaReact } from "react-icons/fa";
-
-const Bebas = Bebas_Neue ({
-    subsets: ['latin'],
-    weight:['400']
-})
 
 const AboutHeadGraphic = () => {
   return (
