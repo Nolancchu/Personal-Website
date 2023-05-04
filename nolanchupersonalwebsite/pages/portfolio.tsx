@@ -2,11 +2,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProjectSection from "@/components/ProjectSection"
-
+import { motion } from "framer-motion";
 
 export default function Portfolio() {
   return (
     <div className='w-full h-full bg-ncc-beige'>
+        <motion.div
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1.5 }}
+        >
         <Navigation/>
         <div className = "flex flex-col justify-center items-center">
           <div className="w-full h-8 bg-ncc-beige"/>
@@ -15,6 +20,7 @@ export default function Portfolio() {
           <ProjectSection/>
         </div>
         <Footer/>
+        </motion.div>
     </div>
   )
 }
